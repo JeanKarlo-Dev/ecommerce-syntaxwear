@@ -54,6 +54,8 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    flex: 1;
+    margin-left: 10rem;
 }
 
 .menu-toggle {
@@ -118,7 +120,7 @@
     .nav-center a, .nav-right a {
         width: 100%;
         border-bottom: 1px solid #e0e0e0;
-        padding: 0.3rem 0;
+        padding: 0.3 0;
         font-size: 1rem;
         display: block;
     }
