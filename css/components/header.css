@@ -52,7 +52,7 @@
 .nav-container {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
     align-items: center;
 }
 
@@ -111,14 +111,14 @@
         width: 100%;
     }
 
-     /* .nav-center ul li, .nav-right ul li {
+     .nav-center ul li, .nav-right ul li {
         flex-direction: column;
-    } */
+    }
 
     .nav-center a, .nav-right a {
         width: 100%;
         border-bottom: 1px solid #e0e0e0;
-        padding: 0.375rem 0;
+        padding: 0.3rem 0;
         font-size: 1rem;
         display: block;
     }

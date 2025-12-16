@@ -8,36 +8,36 @@
     border-radius: 20px;
 }
 
-.highlight{
+.highlight {
     grid-area: highlight;
     background-image: url(../../images/products/card_imagem.jpg);
 }
 
-.sneaker-purple{
+.sneaker-purple {
     grid-area: sneaker-purple;
     background-color: coral;
     background-image: url(../../images/products/roxo-verde-grid.jpg);
 }
 
-.model{
+.model {
     grid-area: model;
     background-color: lightgreen;
     background-image: url(../../images/products/modelo-feminino.jpg);
 }
 
-.sneaker-color{
+.sneaker-color {
     grid-area: sneaker-color;
     background-color: magenta;
     background-image: url(../../images/products/futurista-grid.jpg);
 }
 
-.sneaker-white{
+.sneaker-white {
     grid-area: sneaker-white;
     background-color: orangered;
     background-image: url(../../images/products/preto-branco-grid.jpg);
 }
 
-.sneaker-silver{
+.sneaker-silver {
     grid-area: sneaker-silver;
     background-color: violet;
     background-image: url(../../images/products/moderno-grid.jpg);
@@ -79,4 +79,32 @@
 .cta-group {
     display: flex;
     gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .grid-section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            "highlight highlight"
+            "sneaker-white sneaker-white"
+            "model sneaker-color"
+            "model sneaker-silver"
+            "sneaker-purple sneaker-purple";
+        max-width: 100%;
+        gap: 0.625rem;
+    }
+
+    .highlight {
+        min-height: 500px;
+    }
+
+    .model {
+        min-height: 370px;
+    }
+
+    .sneaker-white,
+    .sneaker-purple {
+        min-height: 190px;
+    }
 }
